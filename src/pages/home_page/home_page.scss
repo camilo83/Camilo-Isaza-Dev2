@@ -1,0 +1,214 @@
+@keyframes dropIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+main {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .foto-camilo img {
+      width: 100px !important;
+      height: 100px !important;
+      border-radius: 50% !important;
+    }
+
+    .personal-info-skills {
+      margin-top: 1.2rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+
+      div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.4rem;
+        border: 1px solid transparent;
+        padding-inline: 8px;
+        border-radius: 0.5rem;
+        opacity: 0;
+        animation: dropIn 0.5s forwards;
+
+        &:nth-child(1) {
+          animation-delay: 0.5s;
+          background-color: #f0db4f;
+          color: #000000;
+        }
+
+        &:nth-child(2) {
+          animation-delay: 1s;
+          background-color: #007acc;
+          color: #ffffff;
+        }
+
+        &:nth-child(3) {
+          animation-delay: 1.5s;
+          background-color: #1a3f4a;
+          color: #ffffff;
+        }
+
+        &:nth-child(4) {
+          animation-delay: 2s;
+          background-color: #332052;
+          color: #ffffff;
+        }
+
+        &:nth-child(5) {
+          animation-delay: 2.5s;
+          background-color: #dc9cbc;
+          color: #ffffff;
+        }
+
+        &:nth-child(6) {
+          animation-delay: 3s;
+          background-color: #75ae76;
+          color: #ffffff;
+        }
+
+        &:nth-child(7) {
+          animation-delay: 3.5s;
+          background-color: #96cd53;
+          color: #ffffff;
+        }
+
+        &:nth-child(8) {
+          animation-delay: 4s;
+          background-color: #401db1;
+          color: #ffffff;
+        }
+
+        &:nth-child(9) {
+          animation-delay: 4.5s;
+          background-color: #d87056;
+          color: #ffffff;
+        }
+
+        &:nth-child(10) {
+          animation-delay: 5s;
+          background-color: #5889b1;
+          color: #ffffff;
+        }
+
+        &:nth-child(11) {
+          animation-delay: 5.5s;
+          background-color: #dd0031;
+          color: #ffffff;
+        }
+
+        &:nth-child(12) {
+          animation-delay: 6s;
+          background-color: #ffffff;
+          color: #000000;
+        }
+
+        &:nth-child(13) {
+          animation-delay: 6.5s;
+          background-color: #21759b;
+          color: #ffffff;
+        }
+
+        &:nth-child(14) {
+          animation-delay: 7s;
+          background-color: #ffffff;
+          color: #000000;
+        }
+
+        &:nth-child(15) {
+          animation-delay: 7.5s;
+          background-color: #2496ed;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .personal-info h2,
+  .personal-info h3,
+  .personal-info p {
+    margin: 10px 0;
+  }
+
+  .professional-profile,
+  .experiencie,
+  .Education,
+  .tools,
+  .skills,
+  .languages {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333333;
+    border-radius: 8px;
+  }
+
+  .professional-profile h4,
+  .experiencie h4,
+  .Education h4,
+  .tools h4,
+  .skills h4,
+  .languages h4,
+  .professional-profile p,
+  .professional-profile li,
+  .experiencie p,
+  .experiencie li,
+  .Education p,
+  .Education li,
+  .tools p,
+  .tools li,
+  .skills p,
+  .skills li,
+  .languages p,
+  .languages li {
+    color: #adadad;
+  }
+
+  .experiencie,
+  .Education {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 20px;
+      width: calc(100% - 40px);
+    }
+
+    li {
+      background-color: #2b2b2b;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      word-wrap: break-word;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  main {
+    .personal-info {
+      p {
+        align-items: center;
+        text-align: center;
+      }
+      .personal-info-skills {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

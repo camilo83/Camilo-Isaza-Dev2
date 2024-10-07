@@ -1,0 +1,54 @@
+.language {
+  background-color: #333;
+  display: flex;
+  justify-content: end;
+  padding-right: 1rem;
+  button {
+    background-color: transparent;
+    border: none;
+    padding-top: 1rem;
+    img {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 10px;
+    color: #eaeaea;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  li {
+    padding: 0;
+  }
+
+  a {
+    color: #ccc;
+    text-decoration: none;
+    &:hover {
+      color: #f0f0f0;
+    }
+  }
+}
